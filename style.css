@@ -88,6 +88,7 @@ nav li a{
 .download-btn{
   border: 1px solid rgb(255, 255, 255);
   background-color: rgb(27, 27, 27);
+  margin-left: 10px;
 }
 .banner-img{
   position: relative;
@@ -161,9 +162,12 @@ nav li a{
 }
 
 /* habit section */
+main>section{
+  margin-top: 70px;
+}
 
 .habit{
-  margin-top: 70px;
+ 
   text-align: center;
   max-width: 1044px;
   margin: 70px auto;
@@ -186,4 +190,155 @@ nav li a{
   border: 1px solid rgba(255, 255, 255, 0.5);; 
    border-radius: 100px;
    margin-bottom: 5px;
+}
+
+/* run section */
+
+.run{
+  max-width: 1050px;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  padding: 30px 35px;
+}
+.run-content{
+  width: 50%;
+  margin-left: 25px;
+}
+.run-content h1{
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 120%;
+  margin-top: 30px;
+}
+.run-content p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: .9rem;
+  letter-spacing: 0.3px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.run-content button{
+  padding: 16px 50px 16px 50px;
+  border: none;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  cursor: pointer;
+  margin-top: 15px;
+}
+.run img{
+  width: 400px;
+  height: 280px;
+  border-radius: 18px;
+  
+}
+
+/* team section */
+
+.team{
+  text-align: center;
+  max-width: 1000px;
+  margin: 70px auto;
+}
+.team h1{
+  font-size: 2.5rem;
+}
+.team p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: .9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.team-images{
+  border-radius: 18px;
+  gap: 25px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+}
+.team-img img{
+  width: 300px;
+  height: 272px;
+  border-radius: 18px;
+}
+.team-img{
+  position: relative;
+}
+.team-img-text{
+  position: absolute;
+  top: 210px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+/* footer section */
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 190px;
+ 
+  
+}
+.footer-content{
+  width: 40%;
+}
+.footer-content h1{
+  color: rgb(230, 83, 60);
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 30px 0px;
+}
+.footer-content p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 20px 0px;
+  line-height: 24px;
+}
+.get-start1{
+  width: 20%;
+  margin-left: 50px;  
+}
+.get-start2{
+  width: 30%;
+  margin-left: 10px;  
+}
+.get-start1 a,.get-start2 a{
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0px 5px;
+  font-size: 1rem;
+  padding: 5px;
+}
+.get-start1 h3,.get-start2 h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 39px 0px;
+  
+}
+footer{
+  background: rgba(255, 255, 255, 0.1);
+  
+}
+hr{
+  width: 72%;
+  margin: 40px auto;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.copyright h4{
+  text-align: center;
+  padding-bottom: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  font-size: 1rem;
+
 }

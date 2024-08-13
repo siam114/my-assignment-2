@@ -15,6 +15,9 @@ header{
   padding: 20px 0 0 0;
   max-width: 90%;
 }
+.siam{
+  display: none;
+}
 /* nav section */
 
 
@@ -23,6 +26,8 @@ header{
   justify-content: space-between;
   align-items: center;
 }
+
+
 .nav-links{
   display: flex;
   list-style: none;
@@ -136,9 +141,6 @@ nav li a{
   border-radius: 12px;
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
-  
- 
-
 }
 .video p{
   font-size: 2rem;
@@ -231,8 +233,7 @@ main>section{
 .run img{
   width: 400px;
   height: 280px;
-  border-radius: 18px;
-  
+  border-radius: 18px; 
 }
 
 /* team section */
@@ -393,9 +394,7 @@ main>section{
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 0 190px;
- 
-  
+  margin: 0 190px; 
 }
 .footer-content{
   width: 40%;
@@ -451,5 +450,178 @@ hr{
   font-weight: 400;
   letter-spacing: 0.3px;
   font-size: 1rem;
+}
 
+
+/* responsive mobile */
+
+@media screen and (max-width :576px) {
+  .navbar{
+    margin-bottom: 20px;
+  }  
+  header{
+    margin: 0 30px;
+  }
+  .nav-links{
+        display: none;
+      } 
+  .brand{
+    font-size: 2.5rem;
+  }
+
+  .bar{
+        font-size: 25px;
+      }     
+  .banner{
+    display: block;
+  }
+  .banner-content{
+    max-width: 100%;
+  }
+  .banner h1{
+      font-size: 3rem;
+  }
+  .banner-img{
+    text-align: center;
+  }
+  .video{
+    right: 290px;
+    top: 250px;
+  }
+    .tutorial p{
+      left: 260px;
+      top: 20px;
+    }
+    .habit-card{
+      display: block;
+    }
+    .run{
+      display: block;
+    }
+    .run-content{
+      width: 100%;
+      margin-left: 10px;
+    }
+    .run-content h1{
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 120%;
+   }
+    .run-content p{
+  
+  letter-spacing: .5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 24px;
+   }
+    .run-content button{
+  padding: 15px 80px;
+  margin-top: 5px;
+  margin-bottom: 30px; 
+
+   }
+    .run img{
+  display: block;
+  margin: auto;
+  width: 470px;
+   }
+    .bmi-content h1,.bmi-content p{
+    margin: 10px 30px;
+   }
+    .bmi-content h1{
+    font-size: 2rem;
+   }
+    .bmi-content p{
+    line-height: 24px;
+   }
+    .bmi-section{
+      display: block;
+      background-color: #1e1e1e;
+      height: 800px;
+   }
+    .bmi-chart{
+     width: 100%;
+   }
+   .bmi-calculator{
+    width: 100%;
+    
+   }
+   .bmi-chart h2{
+    font-size: 1.5rem;
+   }
+   .bmi-calculator p{
+    line-height: 24px;
+   }
+   .bmi-calculator button {
+  padding: 10px 50px;
+  
+  }
+    .team{
+  text-align: center;
+  padding: 5px;
+  }
+     .team h1{
+  font-size: 2rem;
+  }
+   .team p{
+ line-height: 24px;
+  }
+
+    .team-img img{
+  width: 490px;
+  height: 300px;
+  border-radius: 18px;
+   }
+   .team-images{
+      display: grid;
+      grid-template-columns: repeat(1, 300px);
+    }
+  .footer{
+    display: block;
+    margin: 0 60px; 
+}
+.footer-content{
+  width: 90%;
+}
+.footer-content h1{
+  font-size: 4rem;
+}
+.footer-content p{
+   font-size: .9rem;
+   margin: 30px 0;
+   justify-content: start;
+}
+.get-start1{
+  width: 100%;
+  margin-left: 0;  
+}
+.get-start2{
+  width: 100%;
+  margin-left: 0;  
+}
+.get-start1 a,.get-start2 a{
+  margin: 0;
+  padding: 10px;
+}
+.get-start1 h3,.get-start2 h3{
+  margin: 30px 0px;
+}
+hr{
+  width: 90%;
+  margin: 20px auto;
+  
+}
+.copyright h4{
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+}
+/* responsive laptop */
+
+@media screen and (min-width : 992px) {
+
+  .bar{
+    display: none;
+  }
 }

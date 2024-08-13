@@ -299,20 +299,19 @@ main>section{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+
   background-color: #1e1e1e;
 }
 
 .bmi-chart{
   padding: 30px;
   border-radius: 12px;
-  height: 400px ;
+  
   width: 50%;
 }
 .bmi-calculator{
   padding: 30px;
   border-radius: 12px;
-  height: 400px ;
   width: 50%; 
 }
 .bmi-chart h2{
@@ -350,6 +349,9 @@ main>section{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+}
+.option{
+  grid-column: span 2;
 }
 
 .bmi-calculator input, .bmi-calculator select {
@@ -455,7 +457,7 @@ hr{
 
 /* responsive mobile */
 
-@media screen and (max-width :576px) {
+@media screen and (min-width : 360px) and (max-width :576px) {
   .navbar{
     margin-bottom: 20px;
   }  

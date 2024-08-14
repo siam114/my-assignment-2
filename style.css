@@ -332,7 +332,7 @@ nav li a{
 }
 
 .bmi-chart table th, .bmi-chart table td {
-  border: 1px solid #333;
+  border: 1px solid rgb(136, 133, 133);
   padding: 10px;
   text-align: left;
   color: #ffffff;

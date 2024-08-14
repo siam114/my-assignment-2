@@ -339,7 +339,6 @@ nav li a{
 }
 .bmi-chart table td{
   color: rgba(255, 255, 255, 0.5);
-  font-size: .9rem;
 }
 
 
@@ -640,12 +639,16 @@ hr{
     height: 550px;
   }
   .video{
-    right: 190px;
-    top: 230px;
+    right: 160px;
+    top: 260px;
+    height: 93px;
+    width: 160px;
   }
     .tutorial p{
-      left: 190px;
-      top: 20px;
+      left: 170px;
+      top: 100px;
+      height: 80px;
+      width: 160px;
   }
   .habit p{
     line-height: 24px;

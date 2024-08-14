@@ -335,6 +335,7 @@ nav li a{
   border: 1px solid #333;
   padding: 10px;
   text-align: left;
+  color: #ffffff;
 }
 .bmi-chart table td{
   color: rgba(255, 255, 255, 0.5);
@@ -716,7 +717,7 @@ hr{
   }
   .team-images{
     display: grid;
-    grid-template-columns: repeat(1, 370px);
+    grid-template-columns: repeat(1, 300px);
   }
   .team-img img{
     width: 100%;
@@ -724,9 +725,10 @@ hr{
     align-content: center;
   }
   .team-img img{
-    max-width: 370px;
+    max-width: 300px;
     height: 272px;
     border-radius: 18px;
+    margin: 0 auto;
   }
   
  }

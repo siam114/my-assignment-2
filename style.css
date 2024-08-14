@@ -164,9 +164,6 @@ nav li a{
 }
 
 /* habit section */
-main>section{
-  margin-top: 70px;
-}
 
 .habit{
  
@@ -298,15 +295,15 @@ main>section{
 .bmi-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  background-color: #1e1e1e;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  /* height: 100px; */
 }
 
 .bmi-chart{
   padding: 30px;
   border-radius: 12px;
-  
   width: 50%;
 }
 .bmi-calculator{
@@ -354,12 +351,14 @@ main>section{
   grid-column: span 2;
 }
 
-.bmi-calculator input, .bmi-calculator select {
+.bmi-calculator form input, .bmi-calculator form select {
   padding: 10px;
   border: none;
   border-radius: 8px;
   background-color: #2e2e2e;
   font-size: 14px;
+  width: 100%;
+ 
 }
 .bmi-calculator select{
   color: rgba(255, 255, 255, 0.5);
@@ -371,7 +370,7 @@ main>section{
   padding: 10px 30px;
   border: none;
   border-radius: 20px;
-  background-color: #ff5733;
+  background-color: rgb(230, 83, 60);
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
@@ -457,11 +456,7 @@ hr{
 
 /* responsive mobile */
 
-@media screen and (max-width :425px){
- .team-img{
-  display: none;
- }
-}
+
 
 
 @media screen and (max-width :576px) {
@@ -527,12 +522,11 @@ hr{
   padding: 15px 80px;
   margin-top: 5px;
   margin-bottom: 30px; 
-
-   }
+  }
     .run img{
   display: block;
   margin: auto;
-  width: 470px;
+  width: 100%;
    }
     .bmi-content h1,.bmi-content p{
     margin: 10px 30px;
@@ -545,8 +539,6 @@ hr{
    }
     .bmi-section{
       display: block;
-      background-color: #1e1e1e;
-      height: 800px;
    }
     .bmi-chart{
      width: 100%;
@@ -562,8 +554,8 @@ hr{
     line-height: 24px;
    }
    .bmi-calculator button {
-  padding: 10px 50px;
-  
+      padding: 15px 80px; 
+      font-size: 1rem;
   }
     .team{
   text-align: center;
@@ -626,6 +618,118 @@ hr{
 }
 
 }
+
+@media screen and (max-width :425px){
+  .banner h1{
+   font-size: 2.5rem;
+   font-weight: 900;
+  }
+  .banner p{
+    line-height: 24px;
+  }
+  .join-btn,.download-btn{
+    padding: 20px 25px;
+    font-size: 1rem;
+  }
+  .banner-img{
+    margin-right: 0;
+    height: 500px;
+  }
+  .banner-img img{
+    height: 550px;
+  }
+  .video{
+    right: 190px;
+    top: 230px;
+  }
+    .tutorial p{
+      left: 190px;
+      top: 20px;
+  }
+  .habit p{
+    line-height: 24px;
+  }
+  .run-content button{
+    padding: 20px 80px;
+    width: 97%;
+    font-size: 1rem;
+  }
+  .run img{
+    width: 100%;
+  }
+  .bmi-content h1{
+    margin: 10px 30px;
+   }
+   .bmi-content p{
+    margin: 20px 30px;
+   }
+   .bmi-calculator form {
+    gap: 10px;
+  }
+  .footer{
+    width: 90%; 
+    margin-left: 15px; 
+  }
+
+  .footer-content{
+    width: 100%;
+  }
+  .footer-content h1{
+    color: rgb(230, 83, 60);
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 30px 0px;
+  }
+  .footer-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 2px 0px;
+    line-height: 24px;
+  }
+  .get-start1{
+    width: 100%;
+    margin-left: 10px;  
+  }
+  .get-start2{
+    width: 100%;
+    margin-left: 10px;  
+  }
+  .get-start1 a,.get-start2 a{
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0px 5px;
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .get-start1 h3,.get-start2 h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 30px 0px;
+    
+  }
+  hr{
+    width: 90%;
+    margin: 10px auto;
+    
+  }
+  .team-images{
+    display: grid;
+    grid-template-columns: repeat(1, 370px);
+  }
+  .team-img img{
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+  .team-img img{
+    max-width: 370px;
+    height: 272px;
+    border-radius: 18px;
+  }
+  
+ }
 /* responsive laptop */
 
 @media screen and (min-width : 992px) {
